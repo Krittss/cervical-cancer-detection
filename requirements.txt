@@ -1,8 +1,8 @@
 flask
 gunicorn
-tensorflow==2.15.0
+tensorflow==2.16.1
+keras==3.0.0
 numpy
 pillow
 opencv-python-headless
-matplotlib
-gdown
+h5py==3.10.0

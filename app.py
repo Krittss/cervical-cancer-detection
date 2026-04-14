@@ -11,8 +11,7 @@ from gradcam import make_gradcam_heatmap, overlay_heatmap
 app = Flask(__name__)
 
 # ✅ Load trained model
-model = tf.keras.models.load_model("model.h5")
-
+model = tf.keras.models.load_model("model.h5", compile=False)
 # ✅ Upload folder
 UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
