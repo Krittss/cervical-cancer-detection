@@ -1,0 +1,374 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== BACKGROUND ===== */
+body{
+    background-image:url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+width:100%;
+background: linear-gradient(to right,#0f7f86,#79d0c8);
+padding:18px 0;
+}
+
+.nav-links{
+display:flex;
+justify-content:center;
+gap:60px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-size:20px;
+font-weight:500;
+}
+
+/* ===== HERO SECTION ===== */
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 80px;
+height:90vh;
+}
+
+.hero-text h1{
+font-size:70px;
+color:#0b7a7f;
+font-weight:bold;
+max-width:500px;
+}
+
+.tagline{
+margin-top:10px;
+font-size:20px;
+color:#0b7a7f;
+font-style:italic;
+}
+
+.hero-text button{
+margin-top:25px;
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:#0b7a7f;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero-text button:hover{
+background:#095d61;
+}
+
+.hero-image img{
+width:520px;
+max-width:100%;
+}
+
+/* ===================================================== */
+/* ===== 🔥 FINAL RESULT PAGE (FIXED + PROFESSIONAL) ===== */
+/* ===================================================== */
+
+/* CENTERING FIX */
+.result-bg {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;   /* FIXED: responsive height */
+    padding:20px;
+}
+
+/* MAIN CARD */
+.main-card {
+    background:#e8dfc8;
+    padding:30px;
+    border-radius:20px;
+    width:90%;
+    max-width:900px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.3);
+
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* TITLE */
+.title {
+    text-align:center;
+    color:#0b7a7f;
+    margin-bottom:20px;
+    font-size:26px;
+}
+
+/* LAYOUT */
+.content {
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;   /* FIX: responsive */
+}
+
+/* LEFT PANEL */
+.left-panel {
+    flex:1;
+    min-width:300px;
+    text-align:center;
+}
+
+.main-img {
+    width:100%;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.back-link {
+    display:block;
+    margin-top:10px;
+    font-size:14px;
+    color:#0b7a7f;
+    text-decoration:none;
+}
+
+.back-link:hover {
+    text-decoration:underline;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+    flex:2;
+    background:#f9f9f9;
+    padding:20px;
+    border-radius:15px;
+}
+
+/* TEXT */
+.right-panel p {
+    margin:8px 0;
+    font-size:15px;
+}
+
+/* ===== PROGRESS BAR ===== */
+.bar {
+    width:100%;
+    height:10px;
+    background:#ddd;
+    border-radius:10px;
+    margin:8px 0;
+    overflow:hidden;
+}
+
+.fill {
+    height:100%;
+    background:#0b7a7f;
+    border-radius:10px;
+}
+
+/* ===== RISK BAR ===== */
+.risk-bar {
+    width:100%;
+    height:10px;
+    background:#ddd;
+    border-radius:10px;
+    margin:8px 0;
+}
+
+.risk-fill {
+    height:100%;
+    border-radius:10px;
+}
+
+/* COLORS */
+.low { background:green; }
+.medium { background:orange; }
+.high { background:red; }
+
+/* ===== HEATMAP ===== */
+.heatmap {
+    width:140px;
+    margin-top:10px;
+    border-radius:10px;
+}
+
+/* ===== EXAMPLES ===== */
+.examples {
+    margin-top:20px;
+}
+
+.example-row {
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.example-row img {
+    width:70px;
+    border-radius:8px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.example-row img:hover {
+    transform:scale(1.15);
+}
+
+/* ===== WARNING ===== */
+.warning {
+    color:red;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+    from {
+        opacity:0;
+        transform:translateY(15px);
+    }
+    to {
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+/* ===== ABOUT PAGE ADVANCED UI ===== */
+
+
+.about-page {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Container for positioning */
+.about-container {
+    position: relative;
+    padding: 40px;
+}
+
+/* Layout */
+.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    height: 90vh;
+
+    flex-direction: row-reverse; /* 🔥 THIS LINE SWAPS LEFT ↔ RIGHT */
+}
+
+/* LEFT CONTENT */
+.about-left {
+    width: 50%;
+    background: rgba(255,255,255,0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.about-left h1 {
+    color: #0b7a7f;
+    margin-bottom: 15px;
+}
+
+.about-left p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* RIGHT CONTENT */
+.about-right {
+    width: 45%;
+    text-align: center;
+}
+
+/* VIDEO */
+.about-video {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* TEXT BELOW VIDEO */
+.ai-text {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* BACK BUTTON FIX */
+.back-home-btn {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    z-index: 10; /* ensures it's always visible */
+      
+    background: rgba(255,255,255,0.9);
+    padding: 10px 15px;
+    border-radius: 25px;
+
+    text-decoration: none;
+    color: #0b7a7f;
+    font-weight: bold;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.back-home-btn:hover {
+    background: #0b7a7f;
+    color: white;
+}
+/* Lottie alignment */
+.about-right {
+    width: 45%;
+    text-align: center;
+}
+
+/* Better animation scaling */
+lottie-player {
+    max-width: 100%;
+}
+
+.back-btn {
+    position: absolute;   
+    top: 20px;
+    left: 30px;
+    font-size: 100px;
+    z-index: 10;
+
+    background: #0b7a7f;
+    color: white;
+}
+.back-btn:hover {
+    background: #ffffff;
+    color: #0b7a7f;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.left-image {
+    width: 100%;
+    max-width: 600px;  
+    height: auto;
+
+    display: block;
+    margin: 0 auto;    
+    border-radius: 20px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}

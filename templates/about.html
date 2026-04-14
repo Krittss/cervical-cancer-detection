@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - CerviScan</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<!-- Lottie Animation Script -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<style>
+/* Make Lottie animation responsive like a video */
+.about-right lottie-player {
+    width: 100%;
+    max-width: 420px; /* Same as your previous video width */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+</style>
+</head>
+
+<body class="about-page">
+
+<div class="about-wrapper">
+    <a href="{{ url_for('index') }}" class="back-home-btn">⬅ 🏠 Back to Home</a>
+
+    <!-- LEFT SIDE -->
+    <div class="about-left">
+
+        <h1>About Cervical Cancer</h1>
+
+        <p>
+            Cervical cancer is one of the most common cancers affecting women worldwide.
+            It develops in the cells of the cervix and is primarily caused by persistent
+            infection with high-risk human papillomavirus (HPV).
+        </p>
+
+        <p>
+            Early detection plays a critical role in reducing mortality rates.
+            Traditional screening methods require expert analysis and can be time-consuming.
+        </p>
+
+        <p>
+            <strong>CerviScan</strong> uses Artificial Intelligence to assist in early detection
+            by analyzing cervical cell images and providing quick predictions along with risk levels.
+        </p>
+
+        <p>
+            This system helps doctors and patients make faster and more informed decisions.
+        </p>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="about-right">
+
+        <!-- LOTTIE ANIMATION -->
+        <lottie-player 
+            src="{{ url_for('static', filename='analysis.json') }}"
+            background="transparent"
+            speed="1"
+            loop autoplay>
+        </lottie-player>
+
+        <!-- TEXT BELOW ANIMATION -->
+        <p class="ai-text">
+            Your health matters. Our AI is analyzing the image now...
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

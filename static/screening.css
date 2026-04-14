@@ -1,0 +1,92 @@
+body{
+background: linear-gradient(to right,#0f7f86,#79d0c8);
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Main white card */
+
+.screen-container{
+background:white;
+width:85%;
+height:80vh;
+border-radius:30px;
+padding:30px;
+position:relative;
+}
+
+/* Back button */
+
+.back-btn{
+position:absolute;
+top:25px;
+left:25px;
+font-size:25px;
+text-decoration:none;
+color:#0f7f86;
+}
+
+/* Layout */
+
+.screen-content{
+display:flex;
+height:100%;
+align-items:center;
+justify-content:space-around;
+}
+
+/* Left image */
+
+.left-image img{
+height:500px;
+border-radius:20px;
+}
+
+/* Right section */
+
+.right-section{
+text-align:center;
+}
+
+
+
+/* Ribbon */
+
+.ribbon{
+width:70px;
+display:block;
+margin:0 auto 10px auto;
+}
+
+.right-section h1{
+font-size:48px;
+color:#0f7f86;
+margin-top:5px;
+margin-bottom:20px;
+}
+
+/* Upload */
+
+input[type="file"]{
+margin-top:20px;
+}
+
+/* Button */
+
+button{
+margin-top:20px;
+display:block;
+width:180px;
+margin-left:auto;
+margin-right:auto;
+padding:12px;
+border:none;
+border-radius:25px;
+background:#0f7f86;
+color:white;
+font-size:16px;
+cursor:pointer;
+}

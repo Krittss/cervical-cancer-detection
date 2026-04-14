@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CerviScan - Screening</title>
+
+<!-- Flask static CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='screening.css') }}">
+</head>
+
+<body>
+
+<div class="screen-container">
+
+<!-- Back Button -->
+<a href="{{ url_for('index') }}" class="back-btn">⬅ 🏠 Back to Home</a>
+
+<div class="screen-content">
+
+<!-- Left Image -->
+<div class="left-image">
+<img src="{{ url_for('static', filename='cervix.jpg') }}" alt="Cervical Health">
+</div>
+
+<!-- Right Section -->
+<div class="right-section">
+
+<img src="{{ url_for('static', filename='ribbon.png') }}" class="ribbon" title="Cervical Cancer Awareness Ribbon">
+
+<h1>Insert Image</h1>
+
+<!-- 🔥 FORM CONNECTED TO FLASK -->
+<form action="{{ url_for('predict') }}" method="POST" enctype="multipart/form-data">
+
+    <label for="imageUpload">Upload image</label>
+    <input id="imageUpload" type="file" name="file" required>
+
+    <button type="submit">Analyze</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Flask JS -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
